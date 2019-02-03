@@ -1,3 +1,19 @@
 1. Objectar eru tengdir með refrencum, þannig að ef Object1 = object2. Þá mun breyting á einum breyta báðum.
 
 2.
+
+3.
+var method = {
+  constructor: function fn0(value) {
+  this._val = value;
+  },
+  get: function fn1() {
+    return this._val;
+  }
+};
+
+var Saturn = Object.create(method);
+Saturn.constructor(0);
+Saturn.get();
+
+5. Prototype er leið fyrir objecta að erfa frá parent object og classar eru þegar þú notar prototype eins og function með input og output
